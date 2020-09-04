@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        div:not(.one){
+            /*
+              渐进增强
+              优雅迭代
+            */
+            -ms-border-radius:10px;
+           -webkit-border-radius:10px;
+           
+           -moz-border-radius:10px;
+           -o-border-radius:10px;
+
+           border-radius: 10px;
+        }
+       
+       ::selection{
+           color:red;
+           background:green;
+       }
+       ::-webkit-input-placeholder{
+        
+       }
+       
+        
+    </style>
+</head>
+<body>
+
+    <!--
+    
+        chrome 谷歌
+
+        -webkit-  谷歌浏览器解析css的技术
+        ie  微软
+        -ms-   代表微软解析css的技术
+        firefox moz生产的
+        -moz-代表moz解析css的技术
+
+
+        w3c css3特性全部定下来的时候
+
+        border-radius
+
+
+    -->
+    <input type="text" placeholder="搜索商品"">
+   <div>
+1aaaaaaaaaaaaaa<br>
+1aaaaaaaaaaaaaa<br>
+1aaaaaaaaaaaaaa<br>
+1aaaaaaaaaaaaaa<br>
+1aaaaaaaaaaaaaa<br>
+   </div>
+   <div class="one">
+2
+   </div>
+   <div>
+3
+   </div>
+ 
+</body>
+</html>
